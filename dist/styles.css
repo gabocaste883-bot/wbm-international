@@ -12,3 +12,29 @@ section:not(.hero){padding:115px clamp(24px,7vw,112px)}.section-light{background
 @media(max-width:1050px){.desktop-nav{display:none}.menu-toggle{display:block}.mobile-menu{display:flex;position:fixed;z-index:40;top:92px;left:0;right:0;padding:28px;background:var(--navy);color:#fff;flex-direction:column;gap:22px;transform:translateY(-140%);transition:.3s}.mobile-menu.open{transform:none}.hero{grid-template-columns:1fr;min-height:auto}.hero-media{height:500px}.problem-grid,.passport,.why-grid,.process-intro,.markets-heading{grid-template-columns:1fr}.solution-grid{grid-template-columns:repeat(2,1fr)}.corridor{grid-template-columns:1fr}.corridor-line{height:55px;justify-self:center;transform:rotate(90deg);width:50px}.section-heading{display:block}.section-heading p{margin-top:24px}.why-list{margin-top:15px}}
 @media(max-width:650px){.site-header{height:78px}.brand-name{display:none}.header-cta{display:none}.mobile-menu{top:78px}.hero{padding:125px 22px 65px}.hero h1{font-size:49px}.hero-media{height:350px}.hero-card{left:10px;right:10px;bottom:15px;min-width:0;padding:18px}.hero-proof{grid-template-columns:1fr}.hero-proof div,.hero-proof div+div{padding:12px 0;border-left:0;border-bottom:1px solid rgba(255,255,255,.12)}section:not(.hero){padding:78px 22px}.section-label{margin-bottom:45px}.solution-grid,.process-flow,.outcomes{grid-template-columns:1fr}.solution-card{min-height:330px}.process-flow article{min-height:190px}.process-result{align-items:flex-start;flex-direction:column}.profile-head{grid-template-columns:46px 1fr}.profile-head>span{grid-column:2;width:max-content}.passport-sheet header{align-items:flex-start;gap:12px}.passport-sheet mark{max-width:105px;text-align:center}.profile-score{grid-template-columns:1fr}.contact-buttons{flex-direction:column}.contact-buttons .button{width:100%}.contact-meta{flex-direction:column}.contact-meta a{width:100%}.site-footer{flex-direction:column;gap:18px;text-align:center}.site-footer .brand{transform-origin:center}.site-footer .brand-name{display:block}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}
+
+/* Commercial imagery and multilingual refinements */
+.section-image{height:520px;margin:0 0 45px;position:relative;overflow:hidden;border:1px solid rgba(255,255,255,.16)}
+.section-image img{width:100%;height:100%;object-fit:cover;object-position:center 54%;filter:saturate(.78) contrast(1.04)}
+.section-image:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,25,43,.72),transparent 55%)}
+.section-image figcaption{position:absolute;z-index:2;left:34px;bottom:32px;max-width:410px}
+.section-image small{display:block;color:var(--gold);font:700 9px "Manrope";letter-spacing:1.8px;margin-bottom:10px}
+.section-image strong{font:600 24px/1.35 "Manrope"}
+.process-image{height:460px;margin:0 0 45px;display:grid;grid-template-columns:1.45fr .55fr;background:var(--navy);overflow:hidden}
+.process-image img{width:100%;height:100%;object-fit:cover;object-position:center;filter:saturate(.72) contrast(1.05)}
+.process-image figcaption{padding:36px;color:#fff;display:flex;flex-direction:column;justify-content:flex-end}
+.process-image figcaption span{color:var(--gold);font:700 11px "Manrope";letter-spacing:1.8px}
+.process-image figcaption p{font:600 23px/1.45 "Manrope"}
+.passport-sheet{border:1px solid rgba(255,255,255,.22);box-shadow:0 22px 55px rgba(0,0,0,.18)}
+[dir="rtl"] body{font-family:"Segoe UI",Tahoma,Arial,sans-serif}
+[dir="rtl"] .site-header,[dir="rtl"] .hero,[dir="rtl"] .problem-grid,[dir="rtl"] .passport,[dir="rtl"] .why-grid,[dir="rtl"] .process-intro,[dir="rtl"] .markets-heading{direction:rtl}
+[dir="rtl"] .brand,[dir="rtl"] .header-actions,[dir="rtl"] .hero-actions,[dir="rtl"] .section-label,[dir="rtl"] .contact-buttons{direction:ltr}
+[dir="rtl"] .desktop-nav{direction:rtl}[dir="rtl"] .hero-media{direction:ltr}[dir="rtl"] .hero-card{left:auto;right:-42px}
+[dir="rtl"] .solution-card>span{right:auto;left:28px}[dir="rtl"] .section-image figcaption{left:auto;right:34px;text-align:right}
+[dir="rtl"] .section-image:after{background:linear-gradient(270deg,rgba(6,25,43,.72),transparent 55%)}
+[dir="rtl"] .why-list article,[dir="rtl"] .process-flow article,[dir="rtl"] .solution-card,[dir="rtl"] .outcomes article{text-align:right}
+[dir="rtl"] .profile-head,[dir="rtl"] .profile-rows article,[dir="rtl"] .passport-sheet header,[dir="rtl"] .profile-score{direction:rtl;text-align:right}
+[dir="rtl"] .passport-sheet{direction:rtl}[dir="rtl"] .passport-content li{flex-direction:row-reverse;justify-content:flex-end}
+[dir="rtl"] .contact{text-align:center}[dir="rtl"] .mobile-menu{text-align:right}
+@media(max-width:1050px){.process-image{grid-template-columns:1fr}.process-image figcaption{position:absolute;inset:auto 0 0;background:linear-gradient(transparent,rgba(6,25,43,.88));padding-top:70px}.process-image{position:relative}}
+@media(max-width:650px){.section-image,.process-image{height:390px}.section-image figcaption{left:22px;right:22px;bottom:22px}.section-image strong{font-size:20px}[dir="rtl"] .hero-card{right:10px;left:10px}}
