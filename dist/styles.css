@@ -45,3 +45,14 @@ section:not(.hero){padding:115px clamp(24px,7vw,112px)}.section-light{background
 [dir="rtl"] .hero h1{font-family:"Segoe UI",Tahoma,Arial,sans-serif;font-size:clamp(50px,5.3vw,76px);line-height:1.18;letter-spacing:0;padding-block:.08em}
 [dir="rtl"] .hero-lead{line-height:1.9}
 @media(max-width:650px){.hero-media{height:auto;aspect-ratio:3/2}.hero-media img{object-fit:contain}[dir="rtl"] .hero h1{font-size:44px;line-height:1.22}}
+
+/* Final hero composition: larger image with route outside the photograph */
+.hero{grid-template-columns:.92fr 1.08fr;gap:5vw}
+.hero-media{height:auto;aspect-ratio:auto;display:flex;flex-direction:column;align-self:center;background:transparent}
+.hero-media img{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:center;border-bottom:0}
+.hero-media:after{display:none}
+.hero-card{position:static;width:100%;min-width:0;box-shadow:none;padding:20px 24px;border:1px solid rgba(255,255,255,.14);border-top:0}
+.hero-card small{margin-bottom:8px}.hero-card div{justify-content:flex-start;gap:26px}
+[dir="rtl"] .hero-card{left:auto;right:auto}
+@media(max-width:1050px){.hero{grid-template-columns:1fr}.hero-media{width:100%;max-width:860px}.hero-media img{aspect-ratio:16/9;object-fit:cover}}
+@media(max-width:650px){.hero-media{height:auto;aspect-ratio:auto}.hero-media img{aspect-ratio:4/3;object-fit:cover}.hero-card{position:static;left:auto;right:auto;padding:17px 18px}.hero-card div{gap:12px;justify-content:space-between}}
